@@ -1,5 +1,38 @@
-data/
-*.csv
+# ============================================================
+# OLIST E-COMMERCE ANALYTICS PROJECT — .gitignore
+# ============================================================
+
+# Raw data files — large, not meant for GitHub (download instructions in data/README.md)
+data/*.csv
+
+# Keep the data README and folder structure tracked
+!data/README.md
+
+# Python
 __pycache__/
+*.pyc
 .ipynb_checkpoints/
+venv/
+env/
+.env
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Notebook cache (regenerable by running eda.ipynb -- see notebooks/)
+notebooks/_cache/
+
+# Power BI temp/lock files
+powerbi/*.pbix.lock
+~$*.pbix
+
+# OS junk
 .DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
